@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.buod {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(
+        134.34% 134.34% at 50% 0%, 
+        #1f3757 0%,
+        #131537 100% 
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.scoreboard{
+    width: 700px;
+ border: 1px solid white;
+    border-radius: 15px;
+    height: 150px;
+}
+.scoreboard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.score{
+    width: 150px;
+    height: 114px;
+    background-color: white;
+    border-radius: 8px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.title{
+    margin-left: 30px;
+}
+.score h1{
+    color: aqua;
+}
+.score p{
+    color: aquamarine;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 2.5px;
+}
+.hands {
+    background-repeat: no-repeat;
+    width: 476px;
+    height: 430px;
+    display: flex;
+
+    justify-content: center;
+    margin-top: 100px;
+    background-position: center;
+}
+.paper{
+    margin-left: 20px;
+}
+.scissors{
+    margin-left: 20px;
+}
+.rock{
+    margin-right: 20px;
+}
+.hands .hand{
+    cursor: pointer;
+    transition: all 0.25s;
+}
+.hands .hand:hover{
+    transform: translate3d(0px, -8px, 0px);;
+}
+.contest{
+    width: 900px;
+    display: flex;
+}
+.contest img{
+    width: 275px;
+    height: 275px;
+}
+.contest > div{
+    flex: 1;
+}
+.contest h1{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center!important;
+}
+.contest .handImageContent{
+    display: flex;
+    justify-content: center;
+}
+.referee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.referee h1{
+    font-size: 45px;
+}
+.newGame{
+    background-color: white;
+    padding: 25px 50px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.newGame:hover{
+   background-color: deeppink;
+}
+#clear{
+    text-align: center;  
+    width: 350px;  
+    border: 3px solid black;  
+    border-radius: 10px;  
+    cursor: pointer;
+    
+} 
+#bt{
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 15px;
+
+}

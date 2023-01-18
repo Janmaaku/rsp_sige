@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+    crossorigin="anonymous">
+  
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="assets/">
+</head>
+<body>
+ 
+             
+<div class="buod">
+    <br>
+    <div class="scoreboard">
+        <div class="title">
+            <img src="assets/title.png">
+        </div>
+        <div class="score">
+            <p>Player SCORE</p>
+            <h1>0</h1>
+        </div>
+    </div>
+    <div class="hands">
+        <div class="hand rock">
+                <img src="assets/Rock.png" onclick="User_Hand('rock');">
+        </div>
+        <div class="hand paper">
+                <img src="assets/Paper.png" onclick="User_Hand('paper');">
+        </div>
+        <div class="hand scissors">
+                <img src="assets/Scissors.png" onclick="User_Hand('scissors');"> 
+        </div>
+    </div>
+    <div class="contest" style="display: none;">
+        <div class="User_Hand">
+            <h1>YOU PICKED</h1>
+            <div class="handImageContainer">
+                <img  id="pickUser"  src="assets/Paper.png">
+            </div>
+        </div>
+        <div class="referee">
+            <div class="decision"><h1>YOU WIN</h1></div>
+            <div class="newGame" onclick="playAgin();">Play Again</div>
+           
+        </div>
+        <div class="Computer_Hand">
+            <h1>COMPUTER PICKED</h1>
+            <div class="handImageContainer">
+                <img id="pickComputer" src="assets/Scissors.png">
+            </div>
+
+        </div>
+
+    </div>
+<!-- <br><br><br><br>
+     <div  style="background-color: white; width: 300px; height: 300px;">
+        Match History:
+        <p id="his" onclick="history();"></p>
+    </div>
+    <br><br><br><br>   -->
+</div>
+
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
